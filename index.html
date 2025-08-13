@@ -1,13 +1,174 @@
-<html>
-    <head>
-        <title>medanta hospital</title>
-    </head>
-            <body>
-                <h1 style="text-align: center;">Medanta Hospital</h1>
-                <a href="home.html">Home</a>||
-                <a href="about.html">About</a>||
-                <a href="doctor.html">Doctors</a>||
-                <a href="contact.html">Contact</a>||
-                <a href="patients.html">Patients</a>||
-         </body>
-        </html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Lucknow MedCare Hospital</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f8f9fa;
+      color: #333;
+    }
+    header {
+      background-color: #006666;
+      color: white;
+      padding: 10px 0;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      font-weight: bold;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      padding: 8px 15px;
+      border-radius: 5px;
+    }
+    nav a:hover {
+      background-color: #009999;
+    }
+    .hero {
+      text-align: center;
+      padding: 50px 20px;
+      background: url('https://images.unsplash.com/photo-1581090700227-4c4d1a1aa3c0?fit=crop&w=1600&q=80') no-repeat center center/cover;
+      color: white;
+    }
+    .hero h1 {
+      font-size: 40px;
+      margin-bottom: 10px;
+    }
+    .hero p {
+      font-size: 18px;
+      max-width: 600px;
+      margin: auto;
+    }
+    .btn {
+      background-color: #ff6600;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      margin-top: 20px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .btn:hover {
+      background-color: #e65c00;
+    }
+    .section {
+      padding: 40px 20px;
+      max-width: 1100px;
+      margin: auto;
+    }
+    .section h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #006666;
+    }
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+    .card {
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+    .card img {
+      width: 100%;
+      border-radius: 10px;
+      height: 150px;
+      object-fit: cover;
+    }
+    .card h3 {
+      margin: 15px 0 10px;
+      color: #006666;
+    }
+    footer {
+      background-color: #004d4d;
+      color: white;
+      text-align: center;
+      padding: 15px 10px;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#services">Services</a>
+    <a href="#doctors">Doctors</a>
+    <a href="#contact">Contact</a>
+    <a href="#appointment">Book Appointment</a>
+  </nav>
+</header>
+
+<section class="hero" id="home">
+  <h1>Lucknow MedCare Hospital</h1>
+  <p>Your trusted healthcare partner in the heart of Lucknow. Advanced treatments with compassionate care.</p>
+  <button class="btn">Book Appointment</button>
+</section>
+
+<section class="section" id="services">
+  <h2>Our Services</h2>
+  <div class="cards">
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1588776814546-81a119d49c0b?fit=crop&w=800&q=80" alt="Cardiology">
+      <h3>Cardiology</h3>
+      <p>Advanced heart care with expert cardiologists and modern facilities.</p>
+    </div>
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1606813902917-0e54c10e5bb1?fit=crop&w=800&q=80" alt="Neurology">
+      <h3>Neurology</h3>
+      <p>Comprehensive treatment for neurological conditions and brain health.</p>
+    </div>
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1606206522721-3f3b011c7c51?fit=crop&w=800&q=80" alt="Orthopedics">
+      <h3>Orthopedics</h3>
+      <p>Specialized bone, joint, and spine care for all ages.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="doctors">
+  <h2>Our Doctors</h2>
+  <div class="cards">
+    <div class="card">
+      <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Dr. Sharma">
+      <h3>Dr. Rajeev Sharma</h3>
+      <p>Senior Cardiologist</p>
+    </div>
+    <div class="card">
+      <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Dr. Gupta">
+      <h3>Dr. Neha Gupta</h3>
+      <p>Neurologist</p>
+    </div>
+    <div class="card">
+      <img src="https://randomuser.me/api/portraits/men/54.jpg" alt="Dr. Singh">
+      <h3>Dr. Anil Singh</h3>
+      <p>Orthopedic Surgeon</p>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="contact">
+  <h2>Contact Us</h2>
+  <p style="text-align:center;">📍 Gomti Nagar, Lucknow, UP<br>📞 +91-12345-67890<br>✉ info@medcarelko.com</p>
+</section>
+
+<footer>
+  &copy; 2025 Lucknow MedCare Hospital. All rights reserved.
+</footer>
+
+</body>
+</html>
